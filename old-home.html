@@ -1,0 +1,891 @@
+<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Mon Apr 21 2025 14:13:14 GMT+0000 (Coordinated Universal Time)  -->
+<html data-wf-page="68061f24521b2704b4e33ebf" data-wf-site="68061f24521b2704b4e33d68" lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{{ page_title }}</title>
+  <meta content="{{ page_description }}" name="description">
+  <meta content="{{ page_title }}" property="og:title">
+  <meta content="{{ page_description }}" property="og:description">
+  <meta content="{{ page_title }}" property="twitter:title">
+  <meta content="{{ page_description }}" property="twitter:description">
+  <meta property="og:type" content="website">
+  <meta content="summary_large_image" name="twitter:card">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="Webflow" name="generator">
+  <link href="css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="css/webflow.css" rel="stylesheet" type="text/css">
+  <link href="css/moheens-awesome-site.webflow.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+  <script type="text/javascript">WebFont.load({  google: {    families: ["Red Hat Display:300,regular,500,600,700,800,900"]  }});</script>
+  <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+  <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon">
+  <link href="images/webclip.png" rel="apple-touch-icon"><!--  Alpine Focus Plugin  -->
+  <script defer="" src="https://cdn.jsdelivr.net/npm/@alpinejs/focus@3.x.x/dist/cdn.min.js"></script>
+  <!--  Alpine JS  -->
+  <script defer="" src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <script defer="" auto="" min="" src="https://cdn.jsdelivr.net/gh/liquify-pro/core@latest/script.js"></script>
+  <link href="{{ canonical_url }}" rel="canonical">
+  <style>
+  [x-cloak] { display: none !important; }
+  [li-cloak] { display: none !important; }
+/* Setup Font and Background Color if Text is selected */
+::selection {
+  color: #fff;
+  background: #E91B7F;
+}
+::-moz-selection {
+  color: #fff;
+  background: #E91B7F;
+}
+</style>
+  <meta name="theme-color" content="#000" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#fff" media="(prefers-color-scheme: dark)">
+</head>
+<body>
+  <div class="page-wrapper">
+    <div li-snippet="global-styles" class="global-styles w-embed">
+      <style>
+  [li-cloak="hide"]  { display: none !important; }
+  [x-cloak] { display: none !important; }
+  html { font-size: calc(0.8125rem + 0.20833333333333331vw); }
+  @media screen and (max-width:1920px) { html { font-size: calc(0.8125rem + 0.20833333333333337vw); } }
+  @media screen and (max-width:1440px) { html { font-size: 1rem; } }
+  /* Make text look crisper and more legible in all browsers */
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  /* Focus state style for keyboard navigation for the focusable elements */
+  *[tabindex]:focus-visible,
+  input[type="file"]:focus-visible {
+    outline: 0.125rem solid #4d65ff;
+    outline-offset: 0.125rem;
+  }
+  /* Get rid of top margin on first element in any rich text element */
+  .w-richtext > :not(div):first-child, .w-richtext > div:first-child > :first-child {
+    margin-top: 0 !important;
+  }
+  /* Get rid of bottom margin on last element in any rich text element */
+  .w-richtext>:last-child, .w-richtext ol li:last-child, .w-richtext ul li:last-child {
+    margin-bottom: 0 !important;
+  }
+  /* Prevent all click and hover interaction with an element */
+  .pointer-events-off {
+    pointer-events: none;
+  }
+  /* Enables all click and hover interaction with an element */
+  .pointer-events-on {
+    pointer-events: auto;
+  }
+  /* Create a class of .div-square which maintains a 1:1 dimension of a div */
+  .div-square::after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+  }
+  /* Make sure containers never lose their center alignment */
+  .container-medium,.container-small, .container-large {
+    margin-right: auto !important;
+    margin-left: auto !important;
+  }
+  /* 
+  Make the following elements inherit typography styles from the parent and not have hardcoded values. 
+  Important: You will not be able to style for example "All Links" in Designer with this CSS applied.
+  Uncomment this CSS to use it in the project. Leave this message for future hand-off.
+  */
+  /*
+  a,
+  .w-input,
+  .w-select,
+  .w-tab-link,
+  .w-nav-link,
+  .w-dropdown-btn,
+  .w-dropdown-toggle,
+  .w-dropdown-link {
+  color: inherit;
+  text-decoration: inherit;
+  font-size: inherit;
+  }
+  */
+  /* Apply "..." after 3 lines of text */
+  .text-style-3lines {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+  /* Apply "..." after 2 lines of text */
+  .text-style-2lines {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+  /* Adds inline flex display */
+  .display-inlineflex {
+    display: inline-flex;
+  }
+  /* These classes are never overwritten */
+  .hide {
+    display: none !important;
+  }
+  @media screen and (max-width: 991px) {
+    .hide, .hide-tablet {
+      display: none !important;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .hide-mobile-landscape{
+      display: none !important;
+    }
+  }
+  @media screen and (max-width: 479px) {
+    .hide-mobile{
+      display: none !important;
+    }
+  }
+  .margin-0 {
+    margin: 0rem !important;
+  }
+  .padding-0 {
+    padding: 0rem !important;
+  }
+  .spacing-clean {
+    padding: 0rem !important;
+    margin: 0rem !important;
+  }
+  .margin-top {
+    margin-right: 0rem !important;
+    margin-bottom: 0rem !important;
+    margin-left: 0rem !important;
+  }
+  .padding-top {
+    padding-right: 0rem !important;
+    padding-bottom: 0rem !important;
+    padding-left: 0rem !important;
+  }
+  .margin-right {
+    margin-top: 0rem !important;
+    margin-bottom: 0rem !important;
+    margin-left: 0rem !important;
+  }
+  .padding-right {
+    padding-top: 0rem !important;
+    padding-bottom: 0rem !important;
+    padding-left: 0rem !important;
+  }
+  .margin-bottom {
+    margin-top: 0rem !important;
+    margin-right: 0rem !important;
+    margin-left: 0rem !important;
+  }
+  .padding-bottom {
+    padding-top: 0rem !important;
+    padding-right: 0rem !important;
+    padding-left: 0rem !important;
+  }
+  .margin-left {
+    margin-top: 0rem !important;
+    margin-right: 0rem !important;
+    margin-bottom: 0rem !important;
+  }
+  .padding-left {
+    padding-top: 0rem !important;
+    padding-right: 0rem !important;
+    padding-bottom: 0rem !important;
+  }
+  .margin-horizontal {
+    margin-top: 0rem !important;
+    margin-bottom: 0rem !important;
+  }
+  .padding-horizontal {
+    padding-top: 0rem !important;
+    padding-bottom: 0rem !important;
+  }
+  .margin-vertical {
+    margin-right: 0rem !important;
+    margin-left: 0rem !important;
+  }
+  .padding-vertical {
+    padding-right: 0rem !important;
+    padding-left: 0rem !important;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance !important;
+  }
+  .page-wrapper {
+    overflow: clip !important;
+  }
+  body {
+    overscroll-behavior: none;
+  }
+  .swiper-button-disabled {
+    opacity: 50% !important;
+    pointer-events: none !important;
+  }
+  button {
+  	color: inherit;
+    background-color: inherit;
+    padding: inherit;
+  }
+</style>
+    </div>
+    <div li-section="header" class="section_navbar">
+      <div data-animation="default" class="nav_component w-nav" data-easing2="ease" fs-scrolldisable-element="smart-nav" data-easing="ease" data-collapse="medium" data-w-id="1f4a994c-7640-c194-e1f7-4193b5553f7b" role="banner" data-duration="400" x-data="">
+        <div class="nav_container">
+          <a href="#" li-object:href="routes.root_url" class="nav_logo-link w-nav-brand">
+            <div class="nav_logo w-embed"><svg width="100%" height="100%" viewbox="0 0 128 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M10.6279 0.97998H11.1074L7.86736 27.2742C7.8984 27.9764 7.76769 28.7872 7.63581 29.6053C7.25833 31.9471 6.87128 34.3481 10.2408 34.4294C11.8242 34.4683 11.8242 35.7654 11.7775 36.2795L11.4071 40.0812C11.3723 40.442 11.0642 40.7179 10.6951 40.7179H5.95067H5.832V40.7096C2.57998 40.5174 0.147854 37.6674 0.54222 34.4695L3.31597 10.6491C3.5557 4.28165 7.15175 0.97998 10.6279 0.97998ZM127.082 13.0987L121.163 13.1647C120.616 13.4441 117.248 20.6849 115.017 25.482L115.016 25.4822C113.933 27.812 113.117 29.5654 113.023 29.6648C112.86 30.0304 112.311 29.962 112.25 29.5669C112.401 29.5425 110.216 21.6264 109.026 17.3149L109.025 17.3121C108.608 15.8014 108.314 14.7339 108.285 14.6045C108.052 13.7555 107.273 13.1635 106.38 13.1577L98.5442 13.1022C97.5708 13.2744 98.7515 9.03646 98.9265 8.72045C99.9916 6.02846 101.922 5.91878 103.503 5.8289C104.563 5.76867 105.466 5.71733 105.848 4.90348L106.385 1.8294C98.8174 0.437979 95.6709 3.67479 95.6709 3.67479C93.0818 5.89045 92.0041 9.34659 91.7788 12.7426C91.7536 12.9454 91.5786 13.0987 91.3712 13.0987L87.756 13.2166C87.7021 13.2437 87.4623 16.4275 87.4623 16.4275C87.217 17.6878 88.4529 17.6784 89.5876 17.6699C90.022 17.6666 90.4416 17.6634 90.7575 17.7316L87.6457 46.5316C91.267 46.3005 94.6772 43.8502 95.0991 40.2573L97.6931 18.1561C97.7171 17.9521 97.8933 17.7977 98.1018 17.7989L102.478 17.8106C102.663 17.8106 102.825 17.9333 102.874 18.109L108.375 37.9838C108.501 38.2219 106.498 43.2653 105.126 46.7201C104.432 48.468 103.899 49.8093 103.885 49.9158H106.141C108.805 49.9158 111.245 48.4525 112.464 46.1224L127.453 13.6895C127.597 13.4182 127.394 13.0952 127.084 13.0987H127.082ZM78.9983 6.36113C79.0678 10.9552 85.8979 10.8632 86.0537 6.36113C85.9734 1.73997 79.0858 1.72111 78.9983 6.36113ZM78.8321 13.1255L84.3484 13.2257V13.2245C84.8614 13.234 85.2546 13.5582 85.1971 14.0594L82.9052 33.8847C82.4569 37.5602 79.2876 40.3265 75.5249 40.3265L78.8321 13.1255ZM17.2668 6.71367C17.3364 11.3077 24.1665 11.2157 24.3223 6.71367C24.242 2.09251 17.3543 2.07365 17.2668 6.71367ZM17.2205 13.1255L22.7368 13.2257L22.7356 13.2245C23.2486 13.234 23.6418 13.6762 23.5843 14.1773L21.1725 34.2385C20.7506 37.7029 17.9097 40.3595 14.4335 40.6531C14.1015 40.6814 13.827 40.3984 13.8665 40.0718L17.2205 13.1255ZM24.8239 26.1766C23.8626 30.9958 23.7619 37.7737 28.7867 40.1131C33.3537 42.0753 37.8296 39.1781 40.4571 35.334L38.7034 49.3201C42.4877 49.2918 45.6654 46.5101 46.1341 42.8158L49.8236 13.1314C30.526 11.1198 25.8512 21.0248 24.8239 26.1754V26.1766ZM42.7238 17.979L42.0298 23.3077C41.6522 26.2002 40.5794 28.9724 38.8425 31.3366C36.8407 34.0617 34.1796 36.0132 31.853 33.9992C26.8665 29.6822 33.7541 16.8364 42.0214 17.1607C42.4541 17.1772 42.779 17.5569 42.7238 17.979ZM56.6672 30.2376C55.333 38.5401 63.3558 35.0769 65.5686 30.3709H65.571C66.8872 28.3117 67.2244 25.6446 67.5551 23.0286C68.1668 18.1903 68.7563 13.5273 75.4769 13.2104L72.111 40.2487C71.8765 40.2525 71.6509 40.2566 71.4337 40.2606C66.5241 40.3501 65.967 40.3602 66.4928 34.8293C63.538 39.059 58.4268 42.0906 53.547 39.9551C50.06 38.1298 49.4715 34.0003 49.9641 30.2376L52.0534 13.2104C59.2771 13.5295 58.1304 20.4518 57.2042 26.0427C56.9459 27.6019 56.7048 29.0576 56.6672 30.2376Z" fill="black"></path>
+              </svg></div>
+          </a>
+          <nav role="navigation" id="w-node-_1f4a994c-7640-c194-e1f7-4193b5553f7f-b641c10b" class="nav_menu is-page-height-tablet w-nav-menu">
+            <div data-hover="true" data-delay="200" li-for="link in linklists[&#x27;main-menu&#x27;].links" class="nav_menu-dropdown w-dropdown">
+              <div class="nav_dropdown-toggle w-dropdown-toggle">
+                <div li-if="link.links.size &gt; 0" class="dropdown-icon w-embed"><svg width=" 100%" height=" 100%" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.55806 6.29544C2.46043 6.19781 2.46043 6.03952 2.55806 5.94189L3.44195 5.058C3.53958 4.96037 3.69787 4.96037 3.7955 5.058L8.00001 9.26251L12.2045 5.058C12.3021 4.96037 12.4604 4.96037 12.5581 5.058L13.4419 5.94189C13.5396 6.03952 13.5396 6.19781 13.4419 6.29544L8.17678 11.5606C8.07915 11.6582 7.92086 11.6582 7.82323 11.5606L2.55806 6.29544Z" fill="currentColor"></path>
+                  </svg></div>
+                <a li-object:href="link.url" href="#" class="w-inline-block">
+                  <div>
+                    <div li-object="link.title">Link Four</div>
+                  </div>
+                </a>
+              </div>
+              <nav li-if="link.links.size &gt; 0 " class="nav_dropdown-list no-scrollbar w-dropdown-list">
+                <div class="padding-global max-width-full">
+                  <div class="container-large">
+                    <div class="nav_dropdown-grid">
+                      <div li-for="child_link in link.links" id="w-node-fd87d5d8-8c6b-1eca-eca8-fdcf3f76b9b3-b641c10b">
+                        <a href="#" li-object="child_link.title" li-object:href="child_link.url" class="nav_dropdown-link w-dropdown-link">Link Five</a>
+                        <div li-if="child_link.links.size &gt; 0">
+                          <div li-for="grandchild_link in child_link.links">
+                            <a href="#" li-object="grandchild_link.title" li-object:href="grandchild_link.url" class="nav_dropdown-link_child w-dropdown-link">Link Five</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+            </div>
+          </nav>
+          <div class="nav_shop-icons">
+            <div class="nav_search">
+              <div data-hover="false" data-delay="0" class="nav_dropdown w-dropdown">
+                <div class="nav_shop-icon w-dropdown-toggle">
+                  <div class="icon-embed-xsmall w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewbox="0 0 25 25" fill="none" preserveaspectratio="xMidYMid meet" aria-hidden="true" role="img">
+                      <mask id="mask0_2941_121300" style="mask-type:alpha" maskunits="userSpaceOnUse" x="0" y="0" width="25" height="25">
+                        <rect x="0.123535" y="0.987549" width="24" height="24" fill="#D9D9D9"></rect>
+                      </mask>
+                      <g mask="url(#mask0_2941_121300)">
+                        <path d="M19.7235 21.9875L13.4235 15.6875C12.9235 16.0875 12.3485 16.4042 11.6985 16.6375C11.0485 16.8709 10.3569 16.9875 9.62354 16.9875C7.80687 16.9875 6.26937 16.3584 5.01104 15.1C3.7527 13.8417 3.12354 12.3042 3.12354 10.4875C3.12354 8.67088 3.7527 7.13338 5.01104 5.87505C6.26937 4.61672 7.80687 3.98755 9.62354 3.98755C11.4402 3.98755 12.9777 4.61672 14.236 5.87505C15.4944 7.13338 16.1235 8.67088 16.1235 10.4875C16.1235 11.2209 16.0069 11.9125 15.7735 12.5625C15.5402 13.2125 15.2235 13.7875 14.8235 14.2875L21.1235 20.5875L19.7235 21.9875ZM9.62354 14.9875C10.8735 14.9875 11.936 14.55 12.811 13.675C13.686 12.8 14.1235 11.7375 14.1235 10.4875C14.1235 9.23755 13.686 8.17505 12.811 7.30005C11.936 6.42505 10.8735 5.98755 9.62354 5.98755C8.37354 5.98755 7.31104 6.42505 6.43604 7.30005C5.56104 8.17505 5.12354 9.23755 5.12354 10.4875C5.12354 11.7375 5.56104 12.8 6.43604 13.675C7.31104 14.55 8.37354 14.9875 9.62354 14.9875Z" fill="currentColor"></path>
+                      </g>
+                    </svg></div>
+                </div>
+                <nav class="nav_predictive-search-holder w-dropdown-list">
+                  <div li-element="dropdown-toggle" class="nav_predictive-search-close"></div>
+                  <div class="predictive-search_component">
+                    <div class="predictive-search_header">
+                      <div class="heading-style-h3">Search</div><button li-element="dropdown-toggle" aria-label="Close Search" class="nav_dropdown-close-button">
+                        <div class="nav_dropdown-close-icon w-embed"><svg width="15" height="15" viewbox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.84775 14.178L0.447754 12.778L6.04775 7.17798L0.447754 1.57798L1.84775 0.177979L7.44775 5.77798L13.0478 0.177979L14.4478 1.57798L8.84775 7.17798L14.4478 12.778L13.0478 14.178L7.44775 8.57798L1.84775 14.178Z" fill="currentColor"></path>
+                          </svg></div>
+                      </button>
+                    </div><predictive-search>
+                      <div class="predictive-search_holder">
+                        <div class="predictive-search_form w-form">
+                          <form id="wf-form-produkt-suche" name="wf-form-produkt-suche" data-name="produkt-suche" action="/search" method="get" class="predictive-search_form-component" data-wf-page-id="68061f24521b2704b4e33ebf" data-wf-element-id="ace72904-ccb0-6b8e-3d5e-d5f5ca33919d">
+                            <div class="predictive-search_input-holder"><label for="search-input" class="form_hidden-label">Search</label><input type="search" id="search-input" placeholder="Search now" name="q" class="predictive-search_input">
+                              <a href="#" class="predictive-search_search-button w-inline-block">
+                                <div class="icon-embed-xsmall w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewbox="0 0 25 25" fill="none" preserveaspectratio="xMidYMid meet" aria-hidden="true" role="img">
+                                    <mask id="mask0_2941_121300" style="mask-type:alpha" maskunits="userSpaceOnUse" x="0" y="0" width="25" height="25">
+                                      <rect x="0.123535" y="0.987549" width="24" height="24" fill="#D9D9D9"></rect>
+                                    </mask>
+                                    <g mask="url(#mask0_2941_121300)">
+                                      <path d="M19.7235 21.9875L13.4235 15.6875C12.9235 16.0875 12.3485 16.4042 11.6985 16.6375C11.0485 16.8709 10.3569 16.9875 9.62354 16.9875C7.80687 16.9875 6.26937 16.3584 5.01104 15.1C3.7527 13.8417 3.12354 12.3042 3.12354 10.4875C3.12354 8.67088 3.7527 7.13338 5.01104 5.87505C6.26937 4.61672 7.80687 3.98755 9.62354 3.98755C11.4402 3.98755 12.9777 4.61672 14.236 5.87505C15.4944 7.13338 16.1235 8.67088 16.1235 10.4875C16.1235 11.2209 16.0069 11.9125 15.7735 12.5625C15.5402 13.2125 15.2235 13.7875 14.8235 14.2875L21.1235 20.5875L19.7235 21.9875ZM9.62354 14.9875C10.8735 14.9875 11.936 14.55 12.811 13.675C13.686 12.8 14.1235 11.7375 14.1235 10.4875C14.1235 9.23755 13.686 8.17505 12.811 7.30005C11.936 6.42505 10.8735 5.98755 9.62354 5.98755C8.37354 5.98755 7.31104 6.42505 6.43604 7.30005C5.56104 8.17505 5.12354 9.23755 5.12354 10.4875C5.12354 11.7375 5.56104 12.8 6.43604 13.675C7.31104 14.55 8.37354 14.9875 9.62354 14.9875Z" fill="currentColor"></path>
+                                    </g>
+                                  </svg></div>
+                              </a><input id="submit-search" type="submit" data-wait="Please wait..." class="hide w-button" value="Submit">
+                            </div>
+                            <div id="predictive-search" fs-scrolldisable-element="preserve" class="predictive-search_overflow no-scrollbar">
+                              <div li-section="predictive_search" class="predictive-search_section">
+                                <div li-if="predictive_search.performed" class="predictive-search_conditional">
+                                  <div li-tag="assign first_column_results_size = predictive_search.resources.queries.size | plus: predictive_search.resources.collections.size | plus: predictive_search.resources.pages.size | plus: predictive_search.resources.articles.size | plus: predictive_search.resources.products.size" class="hide">This is some text inside of a div block.</div>
+                                  <div li-if="first_column_results_size &gt; 0" class="predictive-search_conditional">
+                                    <div li-if="predictive_search.resources.queries.size &gt; 0 or predictive_search.resources.collections.size &gt; 0" class="predictive-search_topic">
+                                      <div class="predictive-search_headline">
+                                        <div class="text-style-muted">Suggestions</div>
+                                      </div>
+                                      <ul role="list" class="predictive-search_list w-list-unstyled">
+                                        <li li-for="query in predictive_search.resources.queries" class="predictive-search_item">
+                                          <a li-object:href="query.url" href="#" class="predictive-search_link w-inline-block">
+                                            <div li-object="query.styled_text">Tag</div>
+                                          </a>
+                                        </li>
+                                        <li li-for="collection in predictive_search.resources.collections" class="predictive-search_item">
+                                          <a li-object:href="collection.url" href="#" class="predictive-search_link w-inline-block">
+                                            <div li-object="collection.title">Tag</div>
+                                          </a>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                    <div li-if="predictive_search.resources.products.size &gt; 0 or predictive_search.resources.articles.size &gt; 0 or predictive_search.resources.pages.size &gt; 0" class="predictive-search_topic">
+                                      <div class="predictive-search_headline">
+                                        <div class="text-style-muted">Products</div>
+                                      </div>
+                                      <ul role="list" class="predictive-search_product-list w-list-unstyled">
+                                        <li li-for="product in predictive_search.resources.products" class="predictive-search_produt-item">
+                                          <a li-object:href="product.url" href="#" class="predictive-search_line-item w-inline-block">
+                                            <div class="predictive-search_image-wrapper"><img li-object:src="product.featured_media | image_url: width: 150" li-object:alt="product.featured_image.alt" src="images/platzhalter.svg" loading="lazy" alt="" class="predictive-search_image"></div>
+                                            <div class="predictive-search_product-info">
+                                              <div class="text-size-regular text-weight-bold"><span li-object="product.title">Product Title</span></div>
+                                              <div class="text-size-small"><span li-object="product.price | money">18.00$</span></div>
+                                            </div>
+                                          </a>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                    <div li-if="predictive_search.resources.articles.size &gt; 0 or predictive_search.resources.pages.size &gt; 0" class="predictive-search_topic">
+                                      <div class="predictive-search_headline">
+                                        <div class="text-style-muted">Pages</div>
+                                      </div>
+                                      <ul role="list" class="predictive-search_list w-list-unstyled">
+                                        <li li-for="page in predictive_search.resources.pages" class="predictive-search_item">
+                                          <a li-object:href="page.url" href="#" class="predictive-search_link w-inline-block">
+                                            <div li-object="page.title">Tag</div>
+                                          </a>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                  <div li-if="first_column_results_size == 0" class="predictive-search_conditional">
+                                    <div class="predictive-search_topic">
+                                      <div class="text-style-muted">Nothing found in &quot;<span li-object="predictive_search.terms">Search Term</span>&quot;</div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div li-unless="predictive_search.performed" class="predictive-search_conditional">
+                                  <div class="predictive-search_overflow">
+                                    <div class="predictive-search_topic">
+                                      <div class="predictive-search_headline">
+                                        <div class="text-style-muted">Suggestions</div>
+                                      </div>
+                                      <ul role="list" class="predictive-search_list w-list-unstyled">
+                                        <li li-block="Search - Suggestion" class="predictive-search_item">
+                                          <a li-settings:url="Link" href="#" class="predictive-search_link w-inline-block">
+                                            <div li-settings:text="Text">Tag</div>
+                                          </a>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                    <div class="predictive-search_topic">
+                                      <div class="predictive-search_headline">
+                                        <div class="text-style-muted">Bestseller</div>
+                                      </div>
+                                      <ul role="list" class="predictive-search_product-list w-list-unstyled">
+                                        <li li-settings:collection="Search - Bestseller" class="predictive-search_produt-item">
+                                          <a li-object:href="product.url" href="#" class="predictive-search_line-item w-inline-block">
+                                            <div class="predictive-search_image-wrapper"><img li-object:src="product.featured_image | img_url: &#x27;master&#x27;" li-object:alt="product.featured_image.alt" src="images/platzhalter.svg" loading="lazy" alt="" class="predictive-search_image"></div>
+                                            <div class="predictive-search_product-info">
+                                              <div class="text-size-regular text-weight-bold"><span li-object="product.title">Product Title</span></div>
+                                              <div class="text-size-small"><span li-object="product.price | money">18.00$</span></div>
+                                            </div>
+                                          </a>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </form>
+                          <div class="hide w-form-done">
+                            <div>Thank you! Your submission has been received!</div>
+                          </div>
+                          <div class="hide w-form-fail">
+                            <div>Oops! Something went wrong while submitting the form.</div>
+                          </div>
+                        </div>
+                      </div>
+                    </predictive-search>
+                  </div>
+                </nav>
+              </div>
+            </div>
+            <div li-if="shop.customer_accounts_optional" class="nav_account">
+              <a li-attribute:href="{% if customer %}{{ routes.account_url }}{% else %}{{ routes.account_login_url }}{% endif %}" href="#" class="nav_shop-icon w-inline-block">
+                <div class="icon-embed-xsmall w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewbox="0 0 24 24" fill="none" preserveaspectratio="xMidYMid meet" aria-hidden="true" role="img">
+                    <mask id="mask0_2941_121306" style="mask-type:alpha" maskunits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                      <rect width="24" height="24" fill="#D9D9D9"></rect>
+                    </mask>
+                    <g mask="url(#mask0_2941_121306)">
+                      <path d="M12 12C10.9 12 9.95833 11.6083 9.175 10.825C8.39167 10.0417 8 9.1 8 8C8 6.9 8.39167 5.95833 9.175 5.175C9.95833 4.39167 10.9 4 12 4C13.1 4 14.0417 4.39167 14.825 5.175C15.6083 5.95833 16 6.9 16 8C16 9.1 15.6083 10.0417 14.825 10.825C14.0417 11.6083 13.1 12 12 12ZM4 20V17.2C4 16.6333 4.14583 16.1125 4.4375 15.6375C4.72917 15.1625 5.11667 14.8 5.6 14.55C6.63333 14.0333 7.68333 13.6458 8.75 13.3875C9.81667 13.1292 10.9 13 12 13C13.1 13 14.1833 13.1292 15.25 13.3875C16.3167 13.6458 17.3667 14.0333 18.4 14.55C18.8833 14.8 19.2708 15.1625 19.5625 15.6375C19.8542 16.1125 20 16.6333 20 17.2V20H4ZM6 18H18V17.2C18 17.0167 17.9542 16.85 17.8625 16.7C17.7708 16.55 17.65 16.4333 17.5 16.35C16.6 15.9 15.6917 15.5625 14.775 15.3375C13.8583 15.1125 12.9333 15 12 15C11.0667 15 10.1417 15.1125 9.225 15.3375C8.30833 15.5625 7.4 15.9 6.5 16.35C6.35 16.4333 6.22917 16.55 6.1375 16.7C6.04583 16.85 6 17.0167 6 17.2V18ZM12 10C12.55 10 13.0208 9.80417 13.4125 9.4125C13.8042 9.02083 14 8.55 14 8C14 7.45 13.8042 6.97917 13.4125 6.5875C13.0208 6.19583 12.55 6 12 6C11.45 6 10.9792 6.19583 10.5875 6.5875C10.1958 6.97917 10 7.45 10 8C10 8.55 10.1958 9.02083 10.5875 9.4125C10.9792 9.80417 11.45 10 12 10Z" fill="currentColor"></path>
+                    </g>
+                  </svg></div>
+              </a>
+            </div>
+            <div li-snippet="mini-cart" class="nav_mini-cart">
+              <div data-hover="false" data-delay="0" li-element="mini-cart" class="nav_dropdown w-dropdown">
+                <div li-element="mini-cart-toggle" class="nav_shop-icon w-dropdown-toggle">
+                  <div class="icon-embed-xsmall w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewbox="0 0 24 24" fill="none" preserveaspectratio="xMidYMid meet" aria-hidden="true" role="img">
+                      <mask id="mask0_2941_121294" style="mask-type:alpha" maskunits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                        <rect width="24" height="24" fill="#D9D9D9"></rect>
+                      </mask>
+                      <g mask="url(#mask0_2941_121294)">
+                        <path d="M6 22C5.45 22 4.97917 21.8042 4.5875 21.4125C4.19583 21.0208 4 20.55 4 20V8C4 7.45 4.19583 6.97917 4.5875 6.5875C4.97917 6.19583 5.45 6 6 6H8C8 4.9 8.39167 3.95833 9.175 3.175C9.95833 2.39167 10.9 2 12 2C13.1 2 14.0417 2.39167 14.825 3.175C15.6083 3.95833 16 4.9 16 6H18C18.55 6 19.0208 6.19583 19.4125 6.5875C19.8042 6.97917 20 7.45 20 8V20C20 20.55 19.8042 21.0208 19.4125 21.4125C19.0208 21.8042 18.55 22 18 22H6ZM6 20H18V8H16V10C16 10.2833 15.9042 10.5208 15.7125 10.7125C15.5208 10.9042 15.2833 11 15 11C14.7167 11 14.4792 10.9042 14.2875 10.7125C14.0958 10.5208 14 10.2833 14 10V8H10V10C10 10.2833 9.90417 10.5208 9.7125 10.7125C9.52083 10.9042 9.28333 11 9 11C8.71667 11 8.47917 10.9042 8.2875 10.7125C8.09583 10.5208 8 10.2833 8 10V8H6V20ZM10 6H14C14 5.45 13.8042 4.97917 13.4125 4.5875C13.0208 4.19583 12.55 4 12 4C11.45 4 10.9792 4.19583 10.5875 4.5875C10.1958 4.97917 10 5.45 10 6Z" fill="currentColor"></path>
+                      </g>
+                    </svg></div>
+                  <div li-element="mini-cart-item-count" class="nav_shop-quantity">1</div>
+                </div>
+                <nav li-element="mini-cart-container" class="nav_mini-cart-holder w-dropdown-list">
+                  <div li-element="dropdown-toggle" class="nav_mini-cart-close"></div>
+                  <div class="mini-cart_component">
+                    <div li-element="mini-cart-full" class="mini-cart_full">
+                      <div class="mini-cart_header">
+                        <div class="heading-style-h3">Cart</div><button li-element="dropdown-toggle" aria-label="Close Cart" class="nav_dropdown-close-button">
+                          <div class="nav_dropdown-close-icon w-embed"><svg width="15" height="15" viewbox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1.84775 14.178L0.447754 12.778L6.04775 7.17798L0.447754 1.57798L1.84775 0.177979L7.44775 5.77798L13.0478 0.177979L14.4478 1.57798L8.84775 7.17798L14.4478 12.778L13.0478 14.178L7.44775 8.57798L1.84775 14.178Z" fill="currentColor"></path>
+                            </svg></div>
+                        </button>
+                      </div>
+                      <div class="mini-cart_line-item no-scrollbar">
+                        <ul role="list" class="mini-cart_line-item_list w-list-unstyled">
+                          <li li-element="mini-cart-item" class="mini-cart_line-item_item"><img src="images/placholder-3.svg" loading="lazy" li-js-object:src="product.image" alt="" class="mini-cart_line-item_img">
+                            <div class="mini-cart_line-item_product-info">
+                              <div li-js-object="product.title" class="text-size-regular text-weight-bold">Product Title</div>
+                              <div class="mini-cart_line-item_price">
+                                <div li-js-price="product.price" class="text-size-small">14,99 $</div>
+                                <div li-js-if="product.price &lt; product.original_price">
+                                  <div li-js-price="product.original_price" class="text-size-small text-style-strikethrough text-style-muted">14,99 $</div>
+                                </div>
+                              </div>
+                              <div class="mini-cart_line-item_quantity">
+                                <a li-element="mini-cart-item-decrease" href="#" class="mini-cart_line-item_quantity-adjust">-</a><input li-element="mini-cart-item-quantity" class="mini-cart_line-item_quantity-adjust" value="1">
+                                <a li-element="mini-cart-item-increase" href="#" class="mini-cart_line-item_quantity-adjust">+</a>
+                              </div>
+                              <div li-element="mini-cart-item-remove" class="text-size-tiny text-color-grey text-style-link">Remove</div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="mini-cart_footer">
+                        <div class="mini-cart_footer-total">
+                          <div class="text-size-regular text-weight-bold">Subtotal</div>
+                          <div class="mini-cart_footer-price">
+                            <div li-js-price="total.price" class="text-size-regular text-weight-bold">14,99 $</div>
+                            <div li-js-if="total.price &lt; original_total_price" class="mini-cart_conditional">
+                              <div li-js-price="original_total_price" class="text-size-regular text-weight-bold text-style-strikethrough text-style-muted">14,99 $</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div li-element="mini-cart-api-response" class="mini-cart_footer-message hide">
+                          <div class="mini-cart_footer-message-item">
+                            <div class="text-size-regular text-weight-bold">Message</div>
+                            <div li-js-object="cartApiResponse?.result?.message" class="text-size-regular text-weight-bold">14,99 $</div>
+                          </div>
+                        </div>
+                        <a x-bind:href="&#x27;/checkout&#x27;" href="#" class="button w-button">Checkout</a>
+                        <a li-object:href="routes.cart_url" href="#" class="button is-secondary w-button">Cart</a>
+                      </div>
+                    </div>
+                    <div li-cloak="hide" li-element="mini-cart-empty" class="mini-cart_empty">
+                      <div class="mini-cart_header">
+                        <div class="heading-style-h3">Cart</div><button li-element="dropdown-toggle" aria-label="Close Cart" class="nav_dropdown-close-button">
+                          <div class="nav_dropdown-close-icon w-embed"><svg width="15" height="15" viewbox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1.84775 14.178L0.447754 12.778L6.04775 7.17798L0.447754 1.57798L1.84775 0.177979L7.44775 5.77798L13.0478 0.177979L14.4478 1.57798L8.84775 7.17798L14.4478 12.778L13.0478 14.178L7.44775 8.57798L1.84775 14.178Z" fill="currentColor"></path>
+                            </svg></div>
+                        </button>
+                      </div>
+                      <div class="mini-cart_empty-content">
+                        <div class="text-size-regular">No Products selected</div>
+                      </div>
+                    </div>
+                  </div>
+                </nav>
+              </div>
+            </div>
+          </div>
+          <div class="nav_menu-button w-nav-button">
+            <div class="menu-icon">
+              <div class="menu-icon_line-top"></div>
+              <div class="menu-icon_line-middle">
+                <div class="menu-icon_line-middle-inner"></div>
+              </div>
+              <div class="menu-icon_line-bottom"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <main li-content-for-layout="" class="main-wrapper">
+      <section li-section="Liquify-Hero" class="section_li-hero">
+        <div class="padding-global padding-section-large">
+          <div class="container-large">
+            <div class="hero_grid">
+              <div class="hero_content">
+                <h1 id="w-node-_2c4ba0ea-0f79-4e5f-9fb0-0dd93fb06cf5-b4e33ebf" class="hero_heading">Liquify official Starter Template 1.0</h1>
+                <p class="text-size-medium">This template is a perfect starting point for your Shopify store, including everything you need to get your online shop up and running. It is based on the latest <a href="http://finsweet.com/client-first/docs">Client First</a> Clonable.</p>
+                <div id="w-node-_2c4ba0ea-0f79-4e5f-9fb0-0dd93fb06cfc-b4e33ebf" class="margin-top margin-medium">
+                  <a href="https://www.liquify.pro/docu/welcome" target="_blank" class="button w-button">Read the Docs</a>
+                </div>
+              </div><img src="images/65be9b4f19d6a084e4a5c6d9_Liquify-Component-Library.webp" loading="lazy" sizes="(max-width: 1506px) 100vw, 1506px" srcset="images/65be9b4f19d6a084e4a5c6d9_Liquify-Component-Library-p-500.webp 500w, images/65be9b4f19d6a084e4a5c6d9_Liquify-Component-Library-p-800.webp 800w, images/65be9b4f19d6a084e4a5c6d9_Liquify-Component-Library-p-1080.webp 1080w, images/65be9b4f19d6a084e4a5c6d9_Liquify-Component-Library.webp 1506w" alt="" class="hero_image">
+            </div>
+          </div>
+        </div>
+      </section>
+      <header li-section="Hero" class="section_header-home">
+        <div class="header_background-image-wrapper">
+          <div class="header_overlay-layer"></div><img src="images/placholder-8.svg" loading="eager" li-settings:image="Bild | placeholder: &#x27;detailed-apparel-1&#x27;" alt="" class="header_background-image">
+        </div>
+        <div class="padding-global">
+          <div class="container-large">
+            <div class="header_card text-color-white">
+              <div class="max-width-large">
+                <h1 li-settings:text="Headline" class="heading-style-h2">Short heading here</h1>
+                <div class="spacer-small"></div>
+                <div li-settings:richtext="Text" class="text-size-medium">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</div>
+              </div>
+              <div class="spacer-medium"></div>
+              <div class="button-group">
+                <a li-settings:url="Button-Link" li-settings:text="Button-Text" href="#" class="button w-button">More Information</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section li-section="Category" class="section_product">
+        <div class="padding-global padding-section-medium">
+          <div class="container-large">
+            <div class="product_component">
+              <div id="w-node-efdfe76d-e495-5632-4546-bb1b588eec17-b4e33ebf" class="product_heading-wrapper">
+                <div class="product_heading">
+                  <div class="max-width-large">
+                    <h2 li-settings:text="Headline" class="heading-style-h2">Short heading here</h2>
+                  </div>
+                </div>
+                <div class="product_button-row hide-mobile-landscape">
+                  <a li-settings:url="Button-Link" li-settings:text="Button-Text" href="#" class="button w-button">All products</a>
+                </div>
+              </div>
+              <div class="product_list-wrapper w-dyn-list">
+                <div role="list" class="product_list w-dyn-items">
+                  <div li-settings:collection="Collection" role="listitem" class="product_list-item w-dyn-item">
+                    <div li-snippet:product="product" li-snippet="product-item">
+                      <div li-element="product-variant-container" class="product-item_component">
+                        <div class="product-item_image-link">
+                          <a li-object:href="product.url" href="#" class="product-item_image-wrapper w-inline-block"><img li-object:alt="product.featured_image.alt" loading="lazy" li-object:src="product.featured_image | img_url: &#x27;master&#x27;" src="images/placholder-3.svg" alt="" class="product-item_image"></a>
+                          <div class="product-item_tag_list">
+                            <div li-if="product.selected_or_first_available_variant.available != true" class="product-item_tag">Not in Stock</div>
+                            <div li-if="product.compare_at_price_max &gt; product.price" class="product-item_tag is-red">Sale</div>
+                          </div>
+                        </div>
+                        <div class="spacer-xxsmall"></div>
+                        <a li-object:href="product.url" href="#" class="product-item_text-link w-inline-block">
+                          <div class="product-item_left">
+                            <div li-object="product.vendor" class="text-size-small">Vendor</div>
+                            <div li-object="product.title" class="heading-style-h4 text-weight-normal">Product name</div>
+                          </div>
+                          <div class="product-item_price">
+                            <div li-if="product.compare_at_price_max &gt; product.price">
+                              <div li-object="product.compare_at_price | money" class="text-size-regular text-style-strikethrough text-style-muted">$55</div>
+                            </div>
+                            <div li-object="product.price | money" class="text-size-regular">$55</div>
+                          </div>
+                        </a>
+                        <div li-form:product="" li-form="product" class="product-header_form w-form">
+                          <form id="email-form-2" name="email-form-2" data-name="Email Form 2" method="get" data-wf-page-id="68061f24521b2704b4e33ebf" data-wf-element-id="78f25a4e-bcc0-fa13-23b6-84c28952a818">
+                            <div li-if="product.has_only_default_variant != true" class="product-header_option-list">
+                              <div class="spacer-xsmall is-grow"></div>
+                              <div li-element="product-options-loop" class="product-header_option">
+                                <div li-element="product-options-name">Variant</div>
+                                <div class="product-header_radio-list"><label li-element="product-option-loop" class="product-header_radio w-radio">
+                                    <div class="w-form-formradioinput w-form-formradioinput--inputType-custom product-header_radio-button w-radio-input"></div><input id="radio-2" type="radio" name="Radio" data-name="Radio 2" li-element="product-option-input" style="opacity:0;position:absolute;z-index:-1" value="Radio"><span li-element="product-option-name" class="text-size-regular text-weight-semibold w-form-label" for="radio-2">XS</span>
+                                  </label></div>
+                              </div>
+                              <div class="spacer-xsmall is-grow"></div>
+                            </div>
+                          </form>
+                          <div class="w-form-done">
+                            <div>Thank you! Your submission has been received!</div>
+                          </div>
+                          <div class="w-form-fail">
+                            <div>Oops! Something went wrong while submitting the form.</div>
+                          </div>
+                        </div>
+                        <div class="margin-top-auto">
+                          <div class="product-item_form-wrapper">
+                            <div li-if="product.available == true">
+                              <a li-element="add-to-cart" href="#" class="button max-width-full w-button">Add to Cart</a>
+                            </div>
+                            <div li-if="product.available != true">
+                              <a href="#" class="button is-secondary pointer-events-off max-width-full w-button">Not in Stock</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="hide w-dyn-empty">
+                  <div>No items found.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section li-section="Links" class="section_mehr background-color-grey">
+        <div class="padding-global padding-section-medium">
+          <div class="container-large">
+            <div class="max-width-large">
+              <h2 li-settings:text="Headline" class="heading-style-h2">Short heading here</h2>
+            </div>
+            <div class="spacer-large"></div>
+            <div class="mehr_component">
+              <div class="mehr_list-wrapper w-dyn-list">
+                <div role="list" class="mehr_liste w-dyn-items">
+                  <div li-block="Block" role="listitem" class="mehr_item w-dyn-item">
+                    <a li-settings:url="Link" href="#" class="mehr_image-link w-inline-block">
+                      <div class="mehr_image-wrapper">
+                        <h3 li-settings:text="Titel" class="heading-style-h3 z-index-1 text-color-white">Bestselling</h3><img alt="" loading="lazy" li-settings:image="Bild | img_url: &#x27;master&#x27; | placeholder: &#x27;detailed-apparel-1&#x27;" src="images/placholder-1.svg" class="mehr_image">
+                        <div class="mehr_overlay"></div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="hide w-dyn-empty">
+                  <div>No items found.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section li-section="Content" class="section_blog">
+        <div class="padding-global padding-section-medium">
+          <div class="container-large">
+            <div class="headline-wrapper">
+              <h2 li-settings:text="Headline" class="heading-style-h2">Short heading here</h2>
+              <a li-settings:text="Button-Text" li-settings:url="Button-Link" href="#" class="button is-small w-button">All Articles</a>
+            </div>
+            <div class="blog_component">
+              <div class="blog_featured-item">
+                <a li-settings:url="Artikel-1-Link" href="#" class="blog_featured-image-link w-inline-block">
+                  <div class="blog_featured-image-wrapper">
+                    <div class="blog_titel-wrapper">
+                      <h3 li-settings:text="Artikel-1-Titel" class="heading-style-h4">Blog title heading will go here</h3>
+                      <div li-settings:text="Artikel-1-Excerpt" class="text-size-regular">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</div>
+                    </div><img alt="" loading="lazy" li-settings:image="Artikel-1-Bild" src="images/placholder-1.svg" class="blog_featured-image">
+                    <div class="blog_overlay"></div>
+                  </div>
+                </a>
+                <div id="w-node-e78e8996-7ac5-c230-915a-0607e681c372-b4e33ebf" class="blog_two-articles">
+                  <div li-settings:article="Artikel-2" class="blog_featured-item-content">
+                    <a li-settings:url="Artikel-2-Link" href="#" class="blog_featured-title-link w-inline-block">
+                      <h3 li-settings:text="Artikel-2-Titel" class="heading-style-h4">Blog title heading will go here</h3>
+                    </a>
+                    <div li-settings:text="Artikel-2-Excerpt" class="text-size-regular">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</div>
+                    <div class="blog_button-wrapper">
+                      <a li-settings:url="Artikel-2-Link" href="#" class="button is-link is-icon w-inline-block">
+                        <div>Read now</div>
+                        <div class="icon-embed-xxsmall w-embed"><svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 3L11 8L6 13" stroke="CurrentColor" stroke-width="1.5"></path>
+                          </svg></div>
+                      </a>
+                    </div>
+                  </div>
+                  <div li-settings:article="Artikel-3" class="blog_featured-item-content">
+                    <a li-settings:url="Artikel-3-Link" href="#" class="blog_featured-title-link w-inline-block">
+                      <h3 li-settings:text="Artikel-3-Titel" class="heading-style-h4">Blog title heading will go here</h3>
+                    </a>
+                    <div li-settings:text="Artikel-3-Excerpt" class="text-size-regular">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</div>
+                    <div class="blog_button-wrapper">
+                      <a li-settings:url="Artikel-3-Link" href="#" class="button is-link is-icon w-inline-block">
+                        <div>Read now</div>
+                        <div class="icon-embed-xxsmall w-embed"><svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 3L11 8L6 13" stroke="CurrentColor" stroke-width="1.5"></path>
+                          </svg></div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer li-section="footer" class="section_footer">
+      <div class="padding-global padding-section-small">
+        <div class="container-large">
+          <div class="footer_main-wrapper">
+            <div class="footer_link-grid">
+              <div li-for="link in linklists[&#x27;footer&#x27;].links" class="footer_link-column">
+                <div li-object="link.title" class="text-weight-semibold">Column One</div>
+                <div li-for:inside="child_link in link.links" class="footer_link-list">
+                  <a li-object:href="child_link.url" li-object="child_link.title" href="#" class="footer_link">Link Two</a>
+                </div>
+              </div>
+            </div>
+            <div id="w-node-_946c4dcd-3bf7-2b09-3073-715a0eb0badd-cf39daf1" class="footer_newsletter">
+              <h2 li-settings:text="Newsletter-Headline" class="heading-style-h2 text-color-white">Signup for Newsletter</h2>
+              <div class="footer_form-block w-form">
+                <form method="get" li-form:return_to="/" name="email-form" data-name="Email Form" li-form="customer" id="email-form" class="footer_form" data-wf-page-id="68061f24521b2704b4e33ebf" data-wf-element-id="ced975e7-1b4d-f69e-9e83-8c61141236db">
+                  <div class="form_field-wrapper"><label for="email" class="form_hidden-label">Your E-Mail-Address</label><input class="form_input is-white w-input" maxlength="256" name="email" data-name="email" placeholder="Your E-Mail-Address" li-attribute:name="contact[email]" type="email" id="email" required=""></div>
+                  <div li-object="form.errors | default_errors" class="text-size-regular text-color-red">Error Message</div>
+                  <div id="w-node-ced975e7-1b4d-f69e-9e83-8c61141236df-cf39daf1" class="hide w-embed"><input type="hidden" name="contact[accepts_marketing]" value="false"></div><label li-attribute:name="contact[accepts_marketing]" id="w-node-ced975e7-1b4d-f69e-9e83-8c61141236e0-cf39daf1" class="w-checkbox form_checkbox"><input type="checkbox" name="Accepts-Marketing" id="Accepts-Marketing" data-name="Accepts Marketing" class="w-checkbox-input form_checkbox-icon"><span li-settings:text="Checkbox" class="form_checkbox-label text-size-tiny w-form-label" for="Accepts-Marketing">By subscribing you agree to with our <a href="#"><span class="text-color-white text-style-link">Privacy Policy</span></a> and provide consent to receive updates from our company.</span></label><input type="submit" data-wait="" id="w-node-_8c754474-e4d5-bcc2-d22b-03af6f725bec-cf39daf1" class="button w-button" value="Subscribe to Newsletter">
+                </form>
+                <div class="hide w-form-done">
+                  <div>Thank you! Your submission has been received!</div>
+                </div>
+                <div class="hide w-form-fail">
+                  <div>Oops! Something went wrong while submitting the form.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer_divider"></div>
+      <div class="padding-global padding-section-small">
+        <div class="container-large">
+          <div class="footer_icon-grid">
+            <div class="footer_icon-block">
+              <div class="text-size-regular text-color-white">Delivery</div>
+              <div class="footer_icon-row">
+                <div li-block="Lieferung-icon" class="footer_icon-item"><img src="https://uploads-ssl.webflow.com/613f2f905ede8d670775fc8a/61535dd658b6663c8f55bd62_Group%20301.svg" loading="lazy" li-settings:image="icon" alt="" class="footer_shipping-icon"></div>
+              </div>
+            </div>
+            <div id="w-node-_946c4dcd-3bf7-2b09-3073-715a0eb0baf2-cf39daf1" class="footer_icon-block">
+              <div class="text-size-regular text-color-white">Payment Method</div>
+              <ul role="list" class="footer_payment-list w-list-unstyled">
+                <li li-for="type in shop.enabled_payment_types" class="footer_payment-item">
+                  <div li-object="type | payment_type_svg_tag: class: &#x27;footer_payment-img icon--full-color&#x27;" class="footer_payment-svg"><img src="images/payment.svg" loading="lazy" alt="" class="footer_payment-icon"></div>
+                </li>
+              </ul>
+            </div>
+            <div class="footer_icon-block">
+              <div class="text-size-regular text-color-white">Social Media</div>
+              <div class="footer_icon-row">
+                <div li-block="Social-media" class="footer_icon-item">
+                  <a li-settings:url="Social-link" href="#" target="_blank" class="footer_social-link w-inline-block"><img src="images/Group.svg" loading="lazy" li-settings:image="social-icon" alt="" class="footer_social-icon"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer_divider"></div>
+      <div class="padding-global padding-section-small">
+        <div class="container-large">
+          <div class="footer_sub-footer">
+            <a href="#" li-object:href="routes.root_url" class="footer_logo-link w-inline-block">
+              <div class="footer_logo w-embed"><svg width="100%" height="100%" viewbox="0 0 128 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M10.6279 0.97998H11.1074L7.86736 27.2742C7.8984 27.9764 7.76769 28.7872 7.63581 29.6053C7.25833 31.9471 6.87128 34.3481 10.2408 34.4294C11.8242 34.4683 11.8242 35.7654 11.7775 36.2795L11.4071 40.0812C11.3723 40.442 11.0642 40.7179 10.6951 40.7179H5.95067H5.832V40.7096C2.57998 40.5174 0.147854 37.6674 0.54222 34.4695L3.31597 10.6491C3.5557 4.28165 7.15175 0.97998 10.6279 0.97998ZM127.082 13.0987L121.163 13.1647C120.616 13.4441 117.248 20.6849 115.017 25.482L115.016 25.4822C113.933 27.812 113.117 29.5654 113.023 29.6648C112.86 30.0304 112.311 29.962 112.25 29.5669C112.401 29.5425 110.216 21.6264 109.026 17.3149L109.025 17.3121C108.608 15.8014 108.314 14.7339 108.285 14.6045C108.052 13.7555 107.273 13.1635 106.38 13.1577L98.5442 13.1022C97.5708 13.2744 98.7515 9.03646 98.9265 8.72045C99.9916 6.02846 101.922 5.91878 103.503 5.8289C104.563 5.76867 105.466 5.71733 105.848 4.90348L106.385 1.8294C98.8174 0.437979 95.6709 3.67479 95.6709 3.67479C93.0818 5.89045 92.0041 9.34659 91.7788 12.7426C91.7536 12.9454 91.5786 13.0987 91.3712 13.0987L87.756 13.2166C87.7021 13.2437 87.4623 16.4275 87.4623 16.4275C87.217 17.6878 88.4529 17.6784 89.5876 17.6699C90.022 17.6666 90.4416 17.6634 90.7575 17.7316L87.6457 46.5316C91.267 46.3005 94.6772 43.8502 95.0991 40.2573L97.6931 18.1561C97.7171 17.9521 97.8933 17.7977 98.1018 17.7989L102.478 17.8106C102.663 17.8106 102.825 17.9333 102.874 18.109L108.375 37.9838C108.501 38.2219 106.498 43.2653 105.126 46.7201C104.432 48.468 103.899 49.8093 103.885 49.9158H106.141C108.805 49.9158 111.245 48.4525 112.464 46.1224L127.453 13.6895C127.597 13.4182 127.394 13.0952 127.084 13.0987H127.082ZM78.9983 6.36113C79.0678 10.9552 85.8979 10.8632 86.0537 6.36113C85.9734 1.73997 79.0858 1.72111 78.9983 6.36113ZM78.8321 13.1255L84.3484 13.2257V13.2245C84.8614 13.234 85.2546 13.5582 85.1971 14.0594L82.9052 33.8847C82.4569 37.5602 79.2876 40.3265 75.5249 40.3265L78.8321 13.1255ZM17.2668 6.71367C17.3364 11.3077 24.1665 11.2157 24.3223 6.71367C24.242 2.09251 17.3543 2.07365 17.2668 6.71367ZM17.2205 13.1255L22.7368 13.2257L22.7356 13.2245C23.2486 13.234 23.6418 13.6762 23.5843 14.1773L21.1725 34.2385C20.7506 37.7029 17.9097 40.3595 14.4335 40.6531C14.1015 40.6814 13.827 40.3984 13.8665 40.0718L17.2205 13.1255ZM24.8239 26.1766C23.8626 30.9958 23.7619 37.7737 28.7867 40.1131C33.3537 42.0753 37.8296 39.1781 40.4571 35.334L38.7034 49.3201C42.4877 49.2918 45.6654 46.5101 46.1341 42.8158L49.8236 13.1314C30.526 11.1198 25.8512 21.0248 24.8239 26.1754V26.1766ZM42.7238 17.979L42.0298 23.3077C41.6522 26.2002 40.5794 28.9724 38.8425 31.3366C36.8407 34.0617 34.1796 36.0132 31.853 33.9992C26.8665 29.6822 33.7541 16.8364 42.0214 17.1607C42.4541 17.1772 42.779 17.5569 42.7238 17.979ZM56.6672 30.2376C55.333 38.5401 63.3558 35.0769 65.5686 30.3709H65.571C66.8872 28.3117 67.2244 25.6446 67.5551 23.0286C68.1668 18.1903 68.7563 13.5273 75.4769 13.2104L72.111 40.2487C71.8765 40.2525 71.6509 40.2566 71.4337 40.2606C66.5241 40.3501 65.967 40.3602 66.4928 34.8293C63.538 39.059 58.4268 42.0906 53.547 39.9551C50.06 38.1298 49.4715 34.0003 49.9641 30.2376L52.0534 13.2104C59.2771 13.5295 58.1304 20.4518 57.2042 26.0427C56.9459 27.6019 56.7048 29.0576 56.6672 30.2376Z" fill="white"></path>
+                </svg></div>
+            </a>
+            <div li-for:inside="link in linklists[&#x27;legal&#x27;].links" id="w-node-_946c4dcd-3bf7-2b09-3073-715a0eb0bb05-cf39daf1" class="footer_legal-links">
+              <a li-object="link.title" li-object:href="link.url" href="#" class="footer_legal-link">Legal Menu</a>
+            </div><localization-form li-if="localization.available_languages.size &gt; 1" class="li-lang_wrapper">
+              <form li-form="localization" class="li-lang_form">
+                <div data-hover="true" data-delay="500" class="li-lang_dropdown w-dropdown">
+                  <div lang="{{ language.iso_code }}" class="li-lang_dd-toggle w-dropdown-toggle">
+                    <div li-object="localization.language.endonym_name | capitalize">German</div><img src="https://uploads-ssl.webflow.com/613f2f905ede8d670775fc8a/61548248f37f3a0faab19498_arrow-drop.svg" loading="lazy" alt="" class="li-lang_dd-toggle-icon">
+                  </div>
+                  <nav li-for:inside="language in localization.available_languages" class="li-lang_dd-list w-dropdown-list">
+                    <div li-unless="localization.language.iso_code == language.iso_code" class="li-lang_dd-list-item">
+                      <a href="#" li-object="language.endonym_name | capitalize" lang="{{ language.iso_code }}" hreflang="{{ language.iso_code }}" data-value="{{ language.iso_code }}" class="li-lang_dd-link w-dropdown-link">English</a>
+                    </div>
+                  </nav>
+                </div><input type="hidden" name="language_code" class="li-lang_hidden-input" value="{{ localization.language.iso_code }}">
+              </form>
+              <div class="li-lang_script w-embed w-script">
+                <script>
+class LocalizationForm extends HTMLElement {
+  constructor() {
+    super();
+    this.input = this.querySelector('input[name="language_code"], input[name="country_code"]');
+    this.querySelectorAll('a').forEach(item =>
+      item.addEventListener('click', this.onItemClick.bind(this))
+    );
+  }
+  onItemClick(event) {
+    event.preventDefault();
+    const form = this.querySelector('form');
+    this.input.value = event.currentTarget.dataset.value;
+    if (form) form.submit();
+  }
+}
+customElements.define('localization-form', LocalizationForm);
+</script>
+              </div>
+            </localization-form>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=68061f24521b2704b4e33d68" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="js/webflow.js" type="text/javascript"></script>
+  <div li-snippet="search-javascript">
+    <script>
+  // predictive-search
+  class PredictiveSearch extends HTMLElement {
+    constructor() {
+      super();
+      this.input = this.querySelector('input[type="search"]');
+      this.predictiveSearchResults = this.querySelector('#predictive-search');
+      this.input.addEventListener('input', this.debounce((event) => {
+        this.onChange(event);
+      }, 300).bind(this));
+    }
+    onChange() {
+      const searchTerm = this.input.value.trim();
+      if (!searchTerm.length) {
+        this.close();
+        return;
+      }
+      this.getSearchResults(searchTerm);
+    }
+    getSearchResults(searchTerm) {
+      fetch(`{% unless request.locale.root_url == '/' %}{{ request.locale.root_url }}{% endunless %}/search/suggest?q=${searchTerm}&section_id=predictive_search`)
+        .then((response) => {
+        if (!response.ok) {
+          var error = new Error(response.status);
+          this.close();
+          throw error;
+        }
+        return response.text();
+      })
+        .then((text) => {
+        const resultsMarkup = new DOMParser().parseFromString(text, 'text/html').querySelector('#shopify-section-predictive_search').innerHTML;
+        this.predictiveSearchResults.innerHTML = resultsMarkup;
+        this.open();
+      })
+        .catch((error) => {
+        this.close();
+        throw error;
+      });
+    }
+    open() {
+      this.predictiveSearchResults.style.display = 'block';
+    }
+    close() {
+      this.predictiveSearchResults.style.display = 'none';
+    }
+    debounce(fn, wait) {
+      let t;
+      return (...args) => {
+        clearTimeout(t);
+        t = setTimeout(() => fn.apply(this, args), wait);
+      };
+    }
+  }
+  customElements.define('predictive-search', PredictiveSearch);
+</script>
+  </div>
+</body>
+</html>
